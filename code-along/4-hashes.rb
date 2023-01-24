@@ -4,6 +4,20 @@
 
 # Hashes are lists of *key-value pairs*
 
+profile={
+    "name" => "Ben", 
+    "location" => "Evanston",
+    "timeline" => [
+        {"status" =>"Teaching","time" => "3:58 pm"},
+        {"status" =>"Driving to class","time" => "12:50 pm"}]
+}
+
+puts profile
+
 # Accessing data from the hash
 
+puts profile["name"]
+puts profile["timeline"][0]["status"]
+
 # More Complex Hashes
+
